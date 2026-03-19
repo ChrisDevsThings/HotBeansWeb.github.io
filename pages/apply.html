@@ -4,34 +4,83 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home - Hot Beans Web</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/styles.css">
     <meta name="description" content="Hot Beans Web">
 </head>
 <body>
     <header class="site-header">
         <nav class="navbar container" role="navigation" aria-label="Main navigation">
-            <div class="brand"><a href="#comingsoon">Hot Beans Web</a></div>
+            <div class="brand"><a href="/index.html">Hot Beans Web</a></div>
             </button>
             <ul class="nav-links">
-                <li><a href="#comingsoon">Coming Soon!</a></li>
-                <li><a href="#comingsoon">Coming Soon!</a></li>
-                <li><a href="#comingsoon">Coming Soon!</a></li>
-                <li><a href="#comingsoon">Coming Soon!</a></li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/about.html">About Us</a></li>
+                <li><a href="/pages/apply.html">Join Our Team</a></li>
+                <li><a href="/pages/courses.html">Courses</a></li>
+                <li><a href="/pages/contact.html">Contact Us</a></li>
             </ul>
         </nav>
         <div class="hero" id="home">
             <div class="container hero-content">
-                <h1>Welcome to Hot Beans Web!</h1>
-                <p class="lead">Coming Soon!</p>
-                <a class="btn" href="#comingsoon">Coming Soon!</a>
+                <h1>Join Our Team</h1>
+                <p class="lead">We're always looking for passionate and talented individuals to help us grow.</p>
+                <a class="btn" href="#apply">Apply Now</a>
             </div>
         </div>
     </header>
 
     <main>
-        <section id="about" class="container section">
-            <h2>Coming Soon:</h2>
-            <p>Coming Soon!</p>
+        <section id="apply" class="container section">
+            <h2>Join Our Team</h2>
+            <p>We're always looking for talented individuals to join Hot Beans Web. Fill out the form below to apply for a position!</p>
+            
+            <form class="application-form" id="applicationForm">
+                <div class="form-group">
+                    <label for="fullName">Full Name *</label>
+                    <input type="text" id="fullName" name="fullName" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+
+                <div class="form-group">
+                    <label for="position">Position Applied For *</label>
+                    <select id="position" name="position" required>
+                        <option value="">-- Select a Position --</option>
+                        <option value="developer">Web Developer</option>
+                        <option value="designer">UI/UX Designer</option>
+                        <option value="instructor">Course Instructor</option>
+                        <option value="support">Customer Support</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="experience">Years of Experience</label>
+                    <input type="number" id="experience" name="experience" min="0" max="100">
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Tell us about yourself *</label>
+                    <textarea id="message" name="message" rows="5" placeholder="Share your background, skills, and why you'd like to join our team..." required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="agree">
+                        <input type="checkbox" id="agree" name="agree" required>
+                        I agree to the terms and conditions
+                    </label>
+                </div>
+
+                <button type="submit" class="btn">Submit Application</button>
+            </form>
         </section>
     </main>
 
@@ -39,13 +88,15 @@
         <div class="container">
             <p>&copy; 2026 Hot Beans Web — All rights reserved.</p>
             <nav class="footer-nav" aria-label="Footer navigation">
-                <a href="#comingsoon">Coming Soon</a>
-                <a href="#comingsoon">Coming Soon!</a>
-                <a href="#comingsoon">Coming Soon</a>
+                <a href="/index.html">Home</a>
+                <a href="/pages/about.html">About Us</a>
+                <a href="/pages/apply.html">Join Our Team</a>
+                <a href="/pages/courses.html">Courses</a>
+                <a href="/pages/contact.html">Contact Us</a>
             </nav>
         </div>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="/scripts.js"></script>
 </body>
 </html>
