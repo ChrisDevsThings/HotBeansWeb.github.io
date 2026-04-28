@@ -34,7 +34,12 @@
             <h2>Contact Us</h2>
             <p>Fill out the form below and we'll get back to you as soon as possible.</p>
             
-            <form class="application-form" id="contactForm">
+            <form action="https://formsubmit.co/tragicpolic27@gmail.com" class="application-form" id="contactForm" method="POST" novalidate>
+                <input type="hidden" name="_next" value="../index.html">
+                <input type="hidden" name="_subject" value="New application from Hot Beans Web">
+                <input type="hidden" name="_template" value="table">
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_captcha" value="false">
                 <div class="form-group">
                     <label for="contactName">Full Name *</label>
                     <input type="text" id="contactName" name="contactName" required>
